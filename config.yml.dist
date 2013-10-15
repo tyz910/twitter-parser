@@ -1,0 +1,15 @@
+database:
+    driver:   pdo_pgsql
+    dbname:   twitter
+    user:     parser
+    password: 123
+    host:     localhost
+    port:     5432
+
+twitter:
+    api_url: https://api.twitter.com/1.1
+    oauth:
+        consumer_key:    xxx
+        consumer_secret: xxx
+        token:           xxx
+        token_secret:    xxx

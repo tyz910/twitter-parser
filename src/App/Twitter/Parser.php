@@ -50,7 +50,7 @@ class Parser
                 'tweets'     => $response->getTweetsCount(),
                 'followings' => $response->getFollowingCount(),
                 'followers'  => $response->getFollowersCount(),
-                'parse_time' => $parseTime,
+                'parse_time' => round($parseTime * 1000), // in ms
                 'date'       => $date->format('Y-m-d H:i:s')
             ];
 
