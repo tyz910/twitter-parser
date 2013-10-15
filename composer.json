@@ -1,0 +1,22 @@
+{
+    "name": "tyz910/twitter-lenta-parser",
+    "description": "Test task from Social Insight.",
+    "authors": [
+        {
+            "name": "Evgeniy Ivanov",
+            "email": "tyz910@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "doctrine/dbal": "~2.3",
+        "symfony/console": "~2.3",
+        "symfony/yaml": "~2.3",
+        "guzzle/guzzle": "~3.7",
+        "pimple/pimple": "~1.0",
+        "doctrine/migrations": "dev-master"
+    },
+    "autoload": {
+        "psr-0": { "App": "src/" }
+    }
+}
