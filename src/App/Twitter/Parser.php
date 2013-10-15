@@ -140,9 +140,4 @@ class Parser
 
         return $counter;
     }
-
-    public function saveTweets()
-    {
-        $this->db->executeQuery('INSERT INTO twitterLenta_tweets(id, user_id, text, retweet_count, created_at)');
-    }
 }

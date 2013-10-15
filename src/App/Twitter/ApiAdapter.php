@@ -7,9 +7,6 @@ use App\Twitter\Response\UsersShowResponse;
 
 class ApiAdapter
 {
-    const USER_FILTER_ID = 'id';
-    const USER_FILTER_SCREEN_NAME = 'screen_name';
-
     const API_URL_USERS_SHOW    = 'users/show.json';
     const API_URL_USER_TIMELINE = 'statuses/user_timeline.json';
 
@@ -35,7 +32,7 @@ class ApiAdapter
      */
     public function getUserInfoById($id, $includeEntities = false)
     {
-        return $this->getUserInfo([self::USER_FILTER_ID => $id], $includeEntities);
+        return $this->getUserInfo(['id' => $id], $includeEntities);
     }
 
     /**
@@ -45,7 +42,7 @@ class ApiAdapter
      */
     public function getUserInfoByScreenName($screenName, $includeEntities = false)
     {
-        return $this->getUserInfo([self::USER_FILTER_SCREEN_NAME => $screenName], $includeEntities);
+        return $this->getUserInfo(['screen_name' => $screenName], $includeEntities);
     }
 
     /**

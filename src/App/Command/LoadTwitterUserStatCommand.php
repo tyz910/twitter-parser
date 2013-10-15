@@ -28,6 +28,7 @@ class LoadTwitterUserStatCommand extends ContainerAwareCommand
         $table = $this->getApplication()->getHelperSet()->get('table');
         $table->setHeaders(array_keys($data))
             ->addRow($data)
-            ->render($this->output);
+            ->render($this->output)
+        ;
     }
 }

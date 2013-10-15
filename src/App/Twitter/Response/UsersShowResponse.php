@@ -1,7 +1,9 @@
 <?php
 namespace App\Twitter\Response;
 
-class UsersShowResponse extends TwitterResponse
+use App\Api\HttpJsonResponse;
+
+class UsersShowResponse extends HttpJsonResponse
 {
     /**
      * @return int

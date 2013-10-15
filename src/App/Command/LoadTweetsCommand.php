@@ -18,6 +18,7 @@ class LoadTweetsCommand extends ContainerAwareCommand
     }
 
     /**
+     * @throws \InvalidArgumentException
      * @return int|void
      */
     protected function doExecute()

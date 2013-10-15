@@ -1,9 +1,10 @@
 <?php
 namespace App\Twitter\Response;
 
+use App\Api\HttpJsonResponse;
 use App\Twitter\Tweet;
 
-class GetTweetsResponse extends TwitterResponse
+class GetTweetsResponse extends HttpJsonResponse
 {
     /**
      * @return Tweet[]
